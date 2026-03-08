@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sport Celebrities Classifier</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+    <h1>⚽ Sport Celebrities Classifier</h1>
+    <p>Upload an image and identify the legend</p>
+</header>
+
+<main>
+
+    <!-- Top Section -->
+    <section class="top-grid">
+
+        <!-- Upload -->
+        <div class="card upload-card">
+
+            <div class="upload-area" onclick="imageInput.click()">
+                <div class="upload-icon">📤</div>
+                <p class="upload-text">Click or drag an image here</p>
+                <p class="upload-subtext">JPG, PNG, WEBP</p>
+            </div>
+
+            <input type="file" id="imageInput" accept="image/*" hidden>
+
+            <img id="preview">
+
+            <button onclick="predict()">Predict</button>
+
+        </div>
+
+
+        <!-- Result + Confidence -->
+        <div class="card result-wrapper hidden" id="resultWrapper">
+
+            <div class="result-card">
+                <h2 id="player"></h2>
+                <p id="confidence"></p>
+
+                <!-- NEW -->
+                <p id="errorMessage" class="error-message hidden"></p>
+            </div>
+
+            <div class="confidence-section" id="confidenceSection">
+                <h3>Confidence Breakdown</h3>
+                <div id="confidenceBars"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- Players -->
+    <section class="players card">
+        <h2>Possible Players</h2>
+
+        <div class="players-row">
+
+            <div class="player">
+                <img src="/player_images/Courtois/Courtois_1.png">
+                <span>Courtois (0)</span>
+            </div>
+
+            <div class="player">
+                <img src="/player_images/Cristiano Ronaldo/Cristiano Ronaldo_1.png">
+                <span>Cristiano Ronaldo (1)</span>
+            </div>
+
+            <div class="player">
+                <img src="/player_images/Dybala/Dybala_1.png">
+                <span>Dybala (2)</span>
+            </div>
+
+            <div class="player">
+                <img src="/player_images/Kross/Kross_1.png">
+                <span>Kross (3)</span>
+            </div>
+
+            <div class="player">
+                <img src="/player_images/Lionel Messi/Lionel Messi_1.png">
+                <span>Lionel Messi (4)</span>
+            </div>
+
+            <div class="player">
+                <img src="/player_images/Mohamed Salah/Mohamed Salah_1.png">
+                <span>Mohamed Salah (5)</span>
+            </div>
+
+            <div class="player">
+                <img src="/player_images/Neymar/Neymar_1.png">
+                <span>Neymar (6)</span>
+            </div>
+
+            <div class="player">
+                <img src="/player_images/Pogba/Pogba_1.png">
+                <span>Pogba (7)</span>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="/script.js"></script>
+</body>
+</html>
