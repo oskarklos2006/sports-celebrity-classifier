@@ -44,22 +44,22 @@ sports-celebrity-classifier/
 
 ## 🔧 Tech Stack
 
-- **Computer Vision** — OpenCV (Haar cascades for face & eye detection)
-- **Feature Extraction** — PyWavelets (Haar wavelet transforms)
-- **Machine Learning** — scikit-learn (SVM, Random Forest, Logistic Regression)
-- **Backend** — Flask (Python)
-- **Frontend** — HTML, CSS, JavaScript
+- **Computer Vision** - OpenCV (Haar cascades for face & eye detection)
+- **Feature Extraction** - PyWavelets (Haar wavelet transforms)
+- **Machine Learning** - scikit-learn (SVM, Random Forest, Logistic Regression)
+- **Backend** - Flask (Python)
+- **Frontend** - HTML, CSS, JavaScript
 
 ---
 
 ## 🧪 ML Pipeline
 
-1. **Face Detection** — OpenCV Haar cascades detect faces in uploaded images
-2. **Eye Verification** — Only images with both eyes visible are accepted
-3. **Feature Extraction** — Raw pixel data combined with wavelet-transformed features
-4. **Model Training** — SVM, Random Forest and Logistic Regression compared
-5. **Hyperparameter Tuning** — RandomizedSearchCV with 3-fold cross-validation
-6. **Best Model** — SVM saved as `saved_model.pkl`
+1. **Face Detection** - OpenCV Haar cascades detect faces in uploaded images
+2. **Eye Verification** - Only images with both eyes visible are accepted
+3. **Feature Extraction** - Raw pixel data combined with wavelet-transformed features
+4. **Model Training** - SVM, Random Forest and Logistic Regression compared
+5. **Hyperparameter Tuning** - RandomizedSearchCV with 3-fold cross-validation
+6. **Best Model** - SVM saved as `saved_model.pkl`
 
 ---
 
